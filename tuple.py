@@ -138,3 +138,16 @@
 #     print("YES")
 # else:
 #     print("NO")
+# # task 23
+# n=int(input("Student count: "))
+# students=tuple((input("Name: "),int(input("Score: "))) for i in range(n))
+# for name,score in students:
+#     if score>=80:
+#         print(name,end=" ")
+# # task 24
+# n=int(input("Color count: "))
+# colors=tuple(input("Color: ") for i in range(n))
+# colors=list(colors)
+# colors.append(input("Add color: "))
+# colors=tuple(colors)
+# print(colors)
