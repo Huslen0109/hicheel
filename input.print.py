@@ -1,14 +1,14 @@
 # # task 1
 
 
-# a = int(input("Sekund: "))
-# b = a // 60
-# ts = b // 60
-# minn = b - (ts * 60)
-# sek = a % 60
-# print(ts, "tsag")
-# print(minn, "min")
-# print(sek, "sekund")
+a = int(input("Sekund: "))
+b = a // 60
+ts = b // 60
+minn = b - (ts * 60)
+sek = a % 60
+print(ts, "tsag")
+print(minn, "min")
+print(sek, "sekund")
 
 
 # # task 2
