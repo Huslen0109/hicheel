@@ -98,4 +98,30 @@
 # print(f"{bus}-r buudliin daraa: {count}")
 # print(f"{aylal}-r aylald niit suusan: {count}")
 # print(f"Aylaliin orlogo: {amount}")
-# task 7
+# # task 8
+# n = int(input("N = "))
+# count = 0
+# for i in range(1, n + 1):
+#     j = n - i
+#     if i <= j and j >= 1:
+#         print(i, "+", j, "=", n)
+#         count += 1
+# print("Niit:", count, "hos")
+# # task 9
+# n = int(input("N = "))
+# count = 0
+# for i in range(n // 2000, -1, -1):
+#     j = (n - i * 2000) // 1000
+#     print("1000:", j, "shirheg, 2000:", i, "shirheg")
+#     count += 1
+# print("Niit:", count, "huvilbar")
+# # task 10
+# n = int(input("N = "))
+# count = 0
+# for i in range(1, n + 1):
+#     if n % i == 0:
+#         j = n // i
+#         if i <= j:
+#             print(i, "x", j, "=", n, "ylgavar", j - i)
+#             count += 1
+# print("Niit:", count, "hos")
