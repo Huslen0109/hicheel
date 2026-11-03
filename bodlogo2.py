@@ -282,4 +282,4 @@
 #         return False
 # age = int(input("nas: "))
 # print(is_adult(age))
-# task 4
+
