@@ -184,3 +184,93 @@
 #     else:
 #         print("Correct password")
 #         break 
+# # task 21
+# secret = 8
+# while True:
+#     n = int(input("Too: "))
+#     if n == secret:
+#         print("Zow taalaa")
+#         break
+#     else:
+#         print("Buruu")
+# # task 22
+# while True:
+#     n = int(input("Too: "))
+#     if n == 0:
+#         break
+# # task23
+# total = 0
+# while True:
+#     n = int(input("Too: "))
+#     if n == 0:
+#         break
+#     total += n
+# print(total)
+# # task 24
+# for i in range(1, 11):
+#     if i == 5:
+#         continue
+#     print(i)
+# # task 25
+# for i in range(1, 21):
+#     if i % 2 == 0:
+#         continue
+#     print(i)
+# # task 26
+# for i in range(1, 31):
+#     if i % 3 == 0:
+#         continue
+#     print(i)
+# # task 27
+# total = 0
+# for i in range(5):
+#     n = int(input("Too: "))
+#     if n < 0:
+#         continue
+#     total += n
+# print(total)
+# task 28
+# i = 1
+# count = 0
+# while True:
+#     if i % 7 == 0:
+#         print(i)
+#         count += 1
+#     if count == 5:
+#         break
+#     i += 1
+# # task 29
+
+# while True:
+#     n = int(input("Too: "))
+#     if n == 0:
+#         break
+#     if n < 0:
+#         continue
+#     if n % 2 == 1:
+#         continue
+#     print(n)
+# # task 30
+# secret = 17
+# while True:
+#     n = int(input("Too: "))
+#     if n < 0:
+#         print("Sorog too oruulahgui")
+#         continue
+#     if n < secret:
+#         print("Baga baina")
+#     elif n > secret:
+#         print("Ih baina")
+#     else:
+#         print("Zow taalaa")
+#         break
+
+
+
+
+
+
+
+
+
+

@@ -310,83 +310,83 @@
 # import time
 # start = time.perf_counter()
 
-#######################################################################
-import time
-start = time.perf_counter()
+# #######################################################################
+# import time
+# start = time.perf_counter()
 
-a = 10
-b = 20
-c = a + b
+# a = 10
+# b = 20
+# c = a + b
 
-end = time.perf_counter()
-print("O(1)")
-print(f"Time: {(end - start) * 1000:.6f} ms")
+# end = time.perf_counter()
+# print("O(1)")
+# print(f"Time: {(end - start) * 1000:.6f} ms")
 
-########################################################################
+# ########################################################################
 
-import time
+# import time
 
-n = 1000000
-arr = list(range(n))
-target = n - 1
+# n = 1000000
+# arr = list(range(n))
+# target = n - 1
 
-start = time.perf_counter()
+# start = time.perf_counter()
 
-left = 0
-right = len(arr) - 1
+# left = 0
+# right = len(arr) - 1
 
-while left <= right:
-    mid = (left + right) // 2
+# while left <= right:
+#     mid = (left + right) // 2
 
-    if arr[mid] == target:
-        break
-    elif arr[mid] < target:
-        left = mid + 1
-    else:
-        right = mid - 1
+#     if arr[mid] == target:
+#         break
+#     elif arr[mid] < target:
+#         left = mid + 1
+#     else:
+#         right = mid - 1
 
-end = time.perf_counter()
+# end = time.perf_counter()
 
-print("O(log n)")
-print(f"Time: {(end - start) * 1000:.6f} ms")
+# print("O(log n)")
+# print(f"Time: {(end - start) * 1000:.6f} ms")
 
-#####################################################################
+# #####################################################################
 
-import time
+# import time
 
-n = 1000000
-arr = list(range(n))
-target = n - 1
+# n = 1000000
+# arr = list(range(n))
+# target = n - 1
 
-start = time.perf_counter()
+# start = time.perf_counter()
 
-for i in arr:
-    if i == target:
-        break
+# for i in arr:
+#     if i == target:
+#         break
 
-end = time.perf_counter()
+# end = time.perf_counter()
 
-print("O(n)")
-print(f"Time: {(end - start) * 1000:.6f} ms")
+# print("O(n)")
+# print(f"Time: {(end - start) * 1000:.6f} ms")
 
-######################################################################
+# ######################################################################
 
-import time
+# import time
 
-n = 3000
+# n = 3000
 
-start = time.perf_counter()
+# start = time.perf_counter()
 
-count = 0
+# count = 0
 
-for i in range(n):
-    for j in range(n):
-        count += 1
+# for i in range(n):
+#     for j in range(n):
+#         count += 1
 
-end = time.perf_counter()
+# end = time.perf_counter()
 
-print("O(n²)")
-print(f"Time: {(end - start) * 1000:.6f} ms")
+# print("O(n²)")
+# print(f"Time: {(end - start) * 1000:.6f} ms")
 
 
 
