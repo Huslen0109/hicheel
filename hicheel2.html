@@ -1,42 +1,111 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SW26 Angi</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>OYUTNII JAGSAAL</h1>
-  <p>INDRA.C.I surguuliin SW26 angiin taniltsuulga</p>
-  <ul>
-    <li><strong>Angiin huuhdiin too: </strong>1234</li>
-    <li><strong>Angiin bagsh: </strong>tsedo, temka</li>
-    <li><strong>Angiin darga: </strong>Anuka</li>
-  </ul>
-  <table>
-    <tr>
-      <th>duu</th>
-      <th>kino</th>
-      <th>arhi</th>
-    </tr>
-    <tr>
-      <td><a href="https://www.youtube.com/watch?v=f0xNSIXuGTk&list=RDf0xNSIXuGTk&start_radio=1">505
-      </a>
-      </td>
-      <td><a href="https://www.youtube.com/watch?v=198JPna7Yic&t=49s"> greenmile</a></td>
-      <td>  <a href="https://khantaishir.mn/products/210935/595299">haraa</a></td>
-    </tr>
-  </table>
-  <br><br>
-  <form>
-    <label>Ner:</label>
-    <input type="text">
-    <br><br>
-    <label>Nas:</label>
-    <input type="number">
-    <br><br>
-    <label>Password:</label>
-    <input type="password">
-  </form>
+
+    <!-- 1. Header -->
+    <header>
+        <h1>SW26 ANGI</h1>
+        <p>INDRA.C.I surguuliin angiin website</p>
+    </header>
+
+    <!-- 2. Navigation -->
+    <nav>
+        <ul class="menu">
+            <li><a href="#home">Нүүр</a></li>
+            <li><a href="#students">Оюутнууд</a></li>
+            <li><a href="#about">Танилцуулга</a></li>
+            <li><a href="#comment">Сэтгэгдэл</a></li>
+        </ul>
+    </nav>
+
+    <!-- 3. Main -->
+    <main id="home">
+
+        <!-- 4. Article 1 -->
+        <article id="students">
+            <h2>Манай анги</h2>
+            <p>INDRA.C.I сургуулийн SW26 анги.</p>
+
+            <ul>
+                <li><strong>Ангийн хүүхдийн тоо:</strong> 1234</li>
+                <li><strong>Ангийн багш:</strong> Tsedo, Temka</li>
+                <li><strong>Ангийн дарга:</strong> Anuka</li>
+            </ul>
+
+            <!-- 5. Image -->
+            <img src="angi.jpg" alt="Манай ангийн зураг">
+        </article>
+
+        <!-- Article 2 -->
+        <article id="about">
+            <h2>Манай ангийн сонирхол</h2>
+
+            <table>
+                <tr>
+                    <th>Дуу</th>
+                    <th>Кино</th>
+                    <th>Ундаа</th>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://www.youtube.com/watch?v=f0xNSIXuGTk">
+                            505
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.youtube.com/watch?v=198JPna7Yic">
+                            Green Mile
+                        </a>
+                    </td>
+                    <td>Ус</td>
+                </tr>
+            </table>
+        </article>
+
+        <!-- 6. Aside -->
+        <aside>
+            <h3>Нэмэлт мэдээлэл</h3>
+            <p>Манай анги програмчлал болон веб хөгжүүлэлт судалдаг.</p>
+            <p>HTML, CSS, Python хичээлүүд үздэг.</p>
+        </aside>
+
+        <!-- 8. Form -->
+        <section id="comment">
+            <h2>Сэтгэгдэл үлдээх</h2>
+
+            <form id="commentForm">
+                <label for="name">Нэр:</label>
+                <input type="text" id="name" required>
+
+                <label for="message">Сэтгэгдэл:</label>
+                <textarea id="message" rows="4" required></textarea>
+
+                <button type="submit">Илгээх</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- 7. Footer -->
+    <footer>
+        <p>© 2026 SW26 ANGI. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("commentForm")
+            .addEventListener("submit", function(event) {
+                event.preventDefault();
+                alert("Сэтгэгдэл хүлээн авлаа!");
+                this.reset();
+            });
+    </script>
+
 </body>
 </html>
