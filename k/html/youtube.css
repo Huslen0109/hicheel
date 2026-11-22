@@ -11,14 +11,17 @@ body {
 }
 
 .logo img {
-  width: 55px;
+  width: 50px;
   margin-left: 50px;
   display: block;
 }
 
 .ner {
-  margin-left: 10px;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: white;
 }
 
 .box1 {
