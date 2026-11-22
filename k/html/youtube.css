@@ -10,7 +10,6 @@ body {
   height: 70px;
 }
 
-/* YouTube logo */
 .logo img {
   width: 55px;
   margin-left: 50px;
@@ -22,7 +21,6 @@ body {
   font-size: 20px;
 }
 
-/* Search border */
 .box1 {
   border: 1px solid white;
   border-radius: 50px;
@@ -36,11 +34,10 @@ body {
 }
 
 .search {
-  font-size: 16px;
+  font-size: 13px;
   font-family: Arial, sans-serif;
 }
 
-/* Sign in border */
 .last {
   display: flex;
   align-items: center;
@@ -65,7 +62,7 @@ body {
 }
 
 .sign {
-  font-size: 18px;
+  font-size: 13px;
   margin: 0;
 }
 
@@ -94,3 +91,28 @@ body {
   border-radius: 25px;
 }
 
+.box11,
+.box22,
+.box33 {
+  border-radius: 15px;
+  padding: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.box11:hover,
+.box22:hover,
+.box33:hover {
+  background-color: #1a1a1a;
+  cursor: pointer;
+}
+.box11 img,
+.box22 img,
+.box33 img {
+  transition: transform 0.3s ease;
+}
+
+.box11:hover img,
+.box22:hover img,
+.box33:hover img {
+  transform: scale(1.02);
+}
