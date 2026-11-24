@@ -1,0 +1,61 @@
+body {
+  background-color: gray;
+}
+
+.Full {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  grid-template-rows: 60px 1fr 45px;
+  grid-template-areas: 
+        "header header"
+        "nav main"
+        "footer footer";
+  gap: 20px;
+  min-height: 550px;
+  background-color: white;
+  padding: 12px;
+  border-radius: 30px;
+}
+
+.header {
+  grid-area: header;
+  background-color: rgb(176, 174, 174);
+  border-radius: 30px;
+  padding: 15px;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: rgb(176, 174, 174);
+  border-radius: 30px;
+  padding: 15px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: rgb(176, 174, 174);
+  border-radius: 30px  ;
+}
+
+.main {
+  background-color: rgb(176, 174, 174);
+  border-radius: 30px;
+}
+
+.state {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.card {
+  background-color: white;
+  color: rgb(176, 174, 174);
+  border: solid 1px rgb(176, 174, 174);
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
